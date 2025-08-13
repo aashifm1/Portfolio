@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Block sensitive resources
+Disallow: /images/dp.jpg
+Disallow: /res/
+Disallow: /*.pdf$
+
+# Sitemap
+Sitemap: https://aashifm.netlify.app/sitemap.xml
