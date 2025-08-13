@@ -74,8 +74,8 @@ header{
 }
 
 .avatar {
-  width: 160px; /* bigger image */
-  height: 160px;
+  width: 150px; /* bigger image */
+  height: 150px;
   border-radius: 50%;
   overflow: hidden;
   border: 1px solid var(--line);
