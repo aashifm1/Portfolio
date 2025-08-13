@@ -85,7 +85,7 @@ header{
 
 .avatar {
   width: 30vw;
-  max-width: 150px;
+  max-width: 160px;
   aspect-ratio: 1 / 1; /* always square */
   border-radius: 50%;
   overflow: hidden;
