@@ -2,6 +2,10 @@
 
 View Website - [Click Here](https://aashifm.netlify.app)
 
+### Undergoing Development
+- Adding Telegram bot into my website
+
+
 ### Upcoming Improvements
 - Add a "View project" to every project cards.
 - The IP Address should be in link color.

@@ -103,11 +103,108 @@ header{
   font-size: 1.1rem; /* slightly bigger */
 }
 
+#ip {
+  color: #4da3ff; /* Link blue */
+  cursor: pointer;
+  
+}
 
-/* Sections */
+#ip:hover {
+  color: #1e90ff; /* Brighter blue on hover */
+}
+
+/* Telegram Bot Section */
+.bot {
+  padding: 40px 20px;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+
+
+.bot-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.bot-image img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.bot-content {
+  flex: 1;
+  min-width: 250px;
+}
+
+.bot-content p {
+  margin-bottom: 16px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--muted, #555);
+  font-weight: 400;
+}
+
+.bot-content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.bot-content li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.bot-content li strong {
+  font-weight: 600;
+  color: #fef8f8;
+}
+
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .bot-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .bot-image img {
+    max-width: 80%;
+  }
+
+  .bot-content ul {
+    list-style-position: inside;
+    padding-left: 0;
+  }
+}
+
+/* Bot Access Button */
+.bot-btn {
+  display: inline-block;
+  padding: 10px 18px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #2e2e2e; /* Matches dark surroundings */
+  border: 1px solid #4caf50; /* Green accent */
+  border-radius: 8px;
+  text-decoration: none; /* removes underline */
+  transition: all 0.25s ease;
+}
+
+
+/* Sections 
 .section{padding:64px 0; border-top:1px solid var(--line)}
 .section h2{font-size:24px; letter-spacing:-.01em; margin:0 0 8px}
 .muted{color:var(--muted)}
+*/
 
 /* Projects */
 .grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:16px}
