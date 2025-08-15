@@ -200,11 +200,10 @@ header{
 }
 
 
-/* Sections 
+/* Sections */
 .section{padding:64px 0; border-top:1px solid var(--line)}
 .section h2{font-size:24px; letter-spacing:-.01em; margin:0 0 8px}
 .muted{color:var(--muted)}
-*/
 
 /* Projects */
 .grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:16px}
