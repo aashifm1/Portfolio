@@ -256,3 +256,17 @@ footer{padding:24px 0; color:var(--muted)}
    .title{font-size:36px}
    .wrap{padding:18px}
 }
+
+
+/* Force single column on small physical screens, even in desktop mode */
+@media screen and (max-device-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr !important; /* 1 card per row */
+  }
+  .row {
+    flex-direction: column; /* stack vertically */
+  }
+  .card {
+    width: 100%; /* full width for readability */
+  }
+}
