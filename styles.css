@@ -208,6 +208,7 @@ header{
 .card{padding:18px; border:1px solid var(--line); border-radius:var(--radius); background:linear-gradient(180deg,#141417,#101014)}
 .card h3{margin:4px 0 6px; font-size:18px}
 .card p{margin:0; color:var(--muted)}
+
 .chip{font-size:12px; padding:4px 8px; border:1px solid var(--line); border-radius:999px; display:inline-block; margin-right:6px}
 .card-header {
   display: flex;
@@ -230,10 +231,27 @@ header{
   background: #1e4cad;
 }
 
-/* Skills (text-only, no images) */
-.skills{display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:12px}
-.skill{padding:14px 16px; border:1px dashed var(--line); border-radius:12px; background:#111113}
-.skill strong{display:block; margin-bottom:4px}
+/* Skills */
+.skills {
+  display:flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.skill {
+  font-size: 25px;
+  padding: 8px 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #111113;
+  color: var(--muted);
+  transition: all 0.2s ease;
+}
+
+
+.skill{
+  padding:18px; border:1px solid var(--line); border-radius:var(--radius); background:linear-gradient(180deg,#141417,#101014)
+}
 
 /* Contact (minimal, no cards) */
 .contact{display:grid; gap:10px; max-width:680px}

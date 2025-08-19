@@ -1,10 +1,10 @@
+
 User-agent: *
-Allow: /
+Allow: /index.html
+Allow: /styles.css
+Allow: /script.js
 
-# Block sensitive resources
-Disallow: /images/dp.jpg
-Disallow: /res/
-Disallow: /*.pdf$
+Disallow: /assets/
+Disallow: /images/
 
-# Sitemap
-Sitemap: https://aashifm.netlify.app/sitemap.xml
+Disallow: /assets/resume.pdf
