@@ -1,0 +1,10 @@
+
+User-agent: *
+Allow: /index.html
+Allow: /styles.css
+Allow: /script.js
+
+Disallow: /assets/
+Disallow: /images/
+
+Disallow: /assets/resume.pdf
