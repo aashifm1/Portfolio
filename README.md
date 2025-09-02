@@ -8,10 +8,10 @@ View Website - [Click Here](https://aashifm.netlify.app)
 - Updated the "Skill" part - html, css.
 - IP Address error is solved using try and catch method.
 - Removed Bot from Nav Bar.
-
+- Removed Bot from the portfolio itself.
+- Added a "Bottom to Top" Button with smooth scrolling.
+- Modified the robots.txt.
+  
 ### Upcoming Improvements
-- Add a picoCTF like dashboard where update will done manually and weekly once.
 - Navigation bar disapear from "Projects" section (Think if it a bug or a feature).
 - Add a Smooth Scrolling when clicked in nav bar.
-- Add a "Bottom to Top" Button with smooth scrolling.
-- Modify the robots.txt. (exceptional)
