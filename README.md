@@ -7,11 +7,12 @@ View Website - [Click Here](https://aashifm.netlify.app)
 - Added "View" button to every projects.
 - Updated the "Skill" part - html, css.
 - IP Address error is solved using try and catch method.
-- Removed Bot from Nav Bar.
 - Removed Bot from the portfolio itself.
 - Added a "Bottom to Top" Button with smooth scrolling.
 - Modified the robots.txt.
-  
+- Nav bar fully fixed
+
 ### Upcoming Improvements
-- Navigation bar disapear from "Projects" section (Think if it a bug or a feature).
-- Add a Smooth Scrolling when clicked in nav bar.
+- Medium blogs sections with scroll to right and left
+- Update the "Skills" section
+- Update "Project" section from existing to detailed manner.
