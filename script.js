@@ -16,7 +16,7 @@
     if (!ipEl) return;
 
     let attempts = 0;
-    const maxAttempts = 25 + Math.floor(Math.random() * 15); // 25-40 attempts
+    const maxAttempts = 30 + Math.floor(Math.random() * 15); // random ip attempts
 
     const interval = setInterval(() => {
       ipEl.textContent = '· ' + getRandomIP();
@@ -26,7 +26,7 @@
         clearInterval(interval);
         ipEl.textContent = '· ' + realIP;
       }
-    }, 100); // speed of fake tries (ms)
+    }, 50); // speed of fake tries (ms)
   }
 
   // Fetch and display user's real IP
