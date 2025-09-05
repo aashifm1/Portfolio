@@ -6,5 +6,6 @@ Allow: /script.js
 
 Disallow: /assets/
 Disallow: /images/
-
 Disallow: /assets/resume.pdf
+
+Sitemap: https://aashifm.netlify.app/sitemap.xml
