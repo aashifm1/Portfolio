@@ -61,8 +61,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 14px 0;
-  gap: 18px;
+  padding: 12px 0;
+  gap: 16px;
+  height: 90px;
 }
 
 .brand{font-weight:700; letter-spacing:.02em}
@@ -71,7 +72,7 @@ header {
 .link:focus-visible{outline:2px solid var(--accent); outline-offset:3px; border-radius:8px}
 
 /* Hero */
-.hero{min-height:78vh; display:grid; place-items:center; text-align:center}
+.hero{min-height:90vh; display:grid; place-items:center; text-align:center}
 .hero .inner{display:grid; gap:18px; padding:16px}
 .tag {
   display: inline-flex;
@@ -152,44 +153,116 @@ header {
 .section h2{font-size:24px; letter-spacing:-.01em; margin:0 0 8px}
 .muted{color:var(--muted)}
 
-/* Projects */
+/* Projects Container */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: 1fr; /* Single column */
   gap: 16px;
 }
 
-.card{padding:18px; border:1px solid var(--line); border-radius:var(--radius); background:linear-gradient(180deg,#141417,#101014)}
-.card h3{margin:4px 0 6px; font-size:18px}
-
-.card p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 0.95rem;
-  line-height: 1.5;
-  word-break: break-word; /* ensures no breaking layout */
+/* Card styling */
+.card {
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: linear-gradient(180deg, #141417, #101014);
 }
 
-.chip{font-size:12px; padding:4px 8px; border:1px solid var(--line); border-radius:999px; display:inline-block; margin-right:6px}
+/* Card header: Title left, View button right */
 .card-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 12px;
 }
 
+.card h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #fff;
+}
+
+/* View button */
 .view-btn {
   font-size: 13px;
   padding: 4px 10px;
   border: 1px solid var(--line);
   border-radius: 6px;
-  background: var(--accent, #2d6cdf); /* fallback if --accent not set */
+  background: var(--accent, #2d6cdf);
   color: #fff;
   text-decoration: none;
   transition: background 0.2s ease;
 }
 
 .view-btn:hover {
-  background: #1e4cad;
+  color: #00bfa5;
+}
+
+
+/* Card content flex container: image left, details right */
+.card-content {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.card-img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  flex-shrink: 0;
+}
+
+.card-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Description paragraph */
+.card p {
+  margin: 0 0 10px 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+/* Separator line */
+.sep {
+  margin: 10px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+/* Chips (tags) styling */
+.chip {
+  font-size: 12px;
+  padding: 4px 8px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  display: flex;  /* or you can use 'flex' if adding icons etc. */
+  margin-right: 6px;
+  margin-bottom: 4px;
+}
+.chip-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card-content {
+    flex-direction: column;
+  }
+
+  .card-img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 /* Skills */
@@ -213,6 +286,48 @@ header {
   padding:18px; border:1px solid var(--line); border-radius:var(--radius); background:linear-gradient(180deg,#141417,#101014)
 }
 
+/* Only if needed — minimal styles for hackathon section */
+
+#hackathon {
+  margin-top: 4rem;
+}
+
+#hackathon h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.hackathon-entry {
+  margin-bottom: 2.5rem;
+}
+
+.hackathon-entry h3 {
+  font-size: 1.5rem;
+  color: #00ffc3;
+  margin-bottom: 0.5rem;
+}
+
+.hackathon-meta {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.hackathon-entry p {
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.view-btn {
+  color: #00ffc3;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+
 /* Contact (minimal, no cards) */
 .contact{display:grid; gap:10px; max-width:680px}
 .contact a{display:flex; align-items:center; gap:10px; padding:12px 14px; border:1px solid var(--line); border-radius:12px; background:linear-gradient(180deg,#141417,#101014)}
@@ -226,7 +341,7 @@ footer{padding:24px 0; color:var(--muted); text-align: center;}
   position: fixed;
   bottom: 40px;
   right: 40px;
-  z-index: 9999;
+  z-index: 100;
   background-color: #c2a8a8;
   color: #000;
   border: none;
@@ -283,14 +398,8 @@ footer{padding:24px 0; color:var(--muted); text-align: center;}
   }
 }
 
-/* ✅ All Screen Responsiveness */
+/* All Screen Responsiveness */
 @media (max-width: 768px) {
-  .bot-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
   .grid {
     grid-template-columns: 1fr;
   }
