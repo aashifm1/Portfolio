@@ -63,7 +63,7 @@ header {
   justify-content: space-between;
   padding: 12px 0;
   gap: 16px;
-  height: 90px;
+  height: 60px;
 }
 
 .brand{font-weight:700; letter-spacing:.02em}
@@ -263,6 +263,7 @@ header {
     width: 100%;
     height: auto;
   }
+  
 }
 
 /* Skills */
@@ -335,44 +336,63 @@ header {
 
 footer{padding:24px 0; color:var(--muted); text-align: center;}
 .sep{height:1px; background:var(--line); margin:24px 0}
-
-/* Scroll Button */
+/* Scroll to Top Button - Enhanced */
 #scrollToTopBtn {
   position: fixed;
-  bottom: 40px;
-  right: 40px;
-  z-index: 100;
-  background-color: #c2a8a8;
-  color: #000;
-  border: none;
-  outline: none;
+  bottom: 30px;
+  right: 30px;
   width: 50px;
   height: 50px;
+  background: #3a86ff;
+  color: #fff;
+  border: none;
   border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(58, 134, 255, 0.3);
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out, transform 0.2s ease;
-  padding: 0;
+  z-index: 9999 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+  transition: all 0.3s ease;
+  transform: translateY(0) scale(1);
 }
 
+/* Show state */
+#scrollToTopBtn.show {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0) scale(1);
+}
+
+/* Hover effects */
 #scrollToTopBtn:hover {
-  background-color: #dddddd;
-  transform: translateY(-2px);
+  background: #2b5ce6;
+  box-shadow: 0 8px 25px rgba(58, 134, 255, 0.4);
+  transform: translateY(-2px) scale(1.05);
 }
 
+#scrollToTopBtn:active {
+  transform: translateY(0) scale(0.95);
+  transition: all 0.1s ease;
+}
+
+/* Icon styling */
 #scrollToTopBtn svg {
   width: 24px;
   height: 24px;
-  fill: #000;
+  stroke: currentColor;
+  stroke-width: 2.5;
+  transition: transform 0.3s ease;
 }
 
-#scrollToTopBtn.show {
-  opacity: 1;
+#scrollToTopBtn:hover svg {
+  transform: translateY(-2px);
 }
+
 
 /* ✅ Subtle Motion Animations (only if user allows it) */
 @media (prefers-reduced-motion: no-preference) {
