@@ -8,21 +8,23 @@
   <meta property="og:title" content="Aashif M · Portfolio" />
   <meta property="og:description" content="Projects, skills, and contact." />
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
   <header>
     <div class="wrap nav">
       <div class="brand">Aashif M</div>
       <nav class="links">
-        <a class="link" href="#work">Projects</a>
+        <a class="link" href="#home">Home</a>
         <a class="link" href="#skills">Skills</a>
+        <a class="link" href="#work">Projects</a>
         <a class="link" href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="hero wrap">
+    <section id="home" class="hero wrap">
       <div class="inner fade">
         <div class="profile">
           <div class="avatar">
@@ -35,121 +37,12 @@
         </div>
 
         <p class="tag">Hey there <span id="ip" aria-label="Local IP"></span></p>
-        <!--
-        <h1 class="title">Software Development,<span> Bug Bounty,</span> AI-Enthusiast</h1>
-        <p class="subtitle">Blending creativity, code, and security awareness to build solutions that are both functional and timeless.</p>
-        -->
         <p class="subtitle">Focued on project development, bug bounty hunting and AI-driven automation. Experienced in building practical projects like web apps, security tools, conducting advanced recons.</p>
         <div class="cta">
           <a class="btn primary" href="assets/resume.pdf" target="_blank" rel="noopener">View Resume</a>
           <a class="btn" href="#contact">Contact</a>
         </div>
 
-      </div>
-    </section>
-
-    <!-- Projects part -->
-    <section id="work" class="section wrap">
-      <h2>Projects</h2>
-      <p class="muted">A showcase of ideas turned into projects.</p>
-  
-      <div class="grid" id="projects">
-      
-        <article class="card">
-          <div class="card-header">
-            <h3>Red Inject</h3>
-            <a href="https://github.com/aashifm1/Red-Inject" class="view-btn">View</a>
-          </div>
-          <p>
-            A tool that automates the scanning of webpages for forms and identifies XSS or SQL injection vulnerabilities using crawling and pattern-based analysis.
-          </p>
-          <div class="sep"></div>
-          <span class="chip">Python</span><span class="chip">Shell</span>
-        </article>
-        <article class="card">
-          <div class="card-header">
-            <h3>IDPS with n8n</h3>
-            <a href="https://github.com/aashifm1/IDPS-n8n" class="view-btn">View</a>
-          </div>
-          <p>
-            Automated intrusion detection and prevention system that checks IPs, alerts via Telegram, and logs suspicious threats directly into Google Sheets.
-          </p>
-          <div class="sep"></div>
-          <span class="chip">n8n</span><span class="chip">AbuseIPDB</span><span class="chip">Telegram API</span>
-        </article>
-
-        <article class="card">
-          <div class="card-header">
-            <h3>Keylogger</h3>
-            <a href="https://github.com/aashifm1/Keylogger" class="view-btn">View</a>
-          </div>
-          <p>
-            A lightweight script that records keyboard inputs in real time, enabling activity tracking and keystroke logging for monitoring or security analysis.
-          </p>
-          <div class="sep"></div>
-          <span class="chip">Python</span><span class="chip">Shell</span>
-        </article>
-
-        <article class="card">
-          <div class="card-header">
-            <h3>Voice Assistant</h3>
-            <a href="https://github.com/aashifm1/Voice-Assistant" class="view-btn">View</a>
-          </div>
-          <p>
-            A personal assistant that listens to your voice commands, responds using text-to-speech, and performs simple automated tasks like web search and more.
-          </p>
-          <div class="sep"></div>
-          <span class="chip">Python</span>
-        </article>
-        
-        <article class="card">
-          <div class="card-header">
-            <h3>Web Scraper Tool</h3>
-            <a href="https://github.com/aashifm1/Web-Scraper-Playwright" class="view-btn">View</a>
-          </div>
-          <p>
-            Python web scraper using Playwright to extract job listings from Indeed, parse details, and export the data into CSV files.
-          </p>
-          <div class="sep"></div>
-          <span class="chip">Python</span><span class="chip">Web Scraping</span><span class="chip">Playwright</span>
-        </article>
-        
-        <article class="card">
-          <div class="card-header">
-            <h3>Todo List App</h3>
-            <a href="https://github.com/aashifm1/ToDoList-App" class="view-btn">View</a>
-          </div>
-          <p>
-            A task manager app that lets users create, edit, and delete tasks, set due dates, and mark them as complete — all within a clean, responsive interface.
-          </p>
-          <div class="sep"></div>
-          <span class="chip">Dart</span><span class="chip">Flutter</span>
-        </article>
-
-        <article class="card">
-          <div class="card-header">
-            <h3>EventX</h3>
-            <a href="https://eventx23.netlify.app" class="view-btn">View</a>
-          </div>
-          <p>
-            A sleek web platform that allows users to explore, organize, and book events online with a mobile-friendly interface and seamless navigation experience.
-          </p>
-          <div class="sep"></div>
-          <span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">Tailwind CSS</span>
-        </article>
-        
-        <article class="card">
-          <div class="card-header">
-            <h3>ZeroRag-AI</h3>
-            <a href="https://zerorag-ai.netlify.app" class="view-btn">View</a>
-          </div>
-          <p>
-            An AI-powered portal designed to secure and anonymous reporting of ragging on campus, enabling students to raise concerns while ensuring action by the authorities.
-          </p>
-          <div class="sep"></div>
-          <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JS</span>
-        </article>
-        
       </div>
     </section>
     
@@ -170,27 +63,116 @@
       </div>
     </section>
 
-    <!-- Telegram Bot --
-    <section id="bot" class="section bot wrap">
-      <h2>Telegram Bot</h2>
-      <div class="bot-container">
-        <div class="bot-image">
-          <img src="images/bot-dp.png" alt="XploitNow Bot">
-        </div>
-        <div class="bot-content">
-          <p class="muted">A feature-rich Telegram bot delivering curated updates on bug bounty programs, software development trends, and the latest cybersecurity news — all in one place.</p>
-          <ul>
-            <li>Bug Bounty Alerts</li>
-            <li>Software Development Insights</li>
-            <li>Cybersecurity Newsfeed</li>
-          </ul>
-          <a class="bot-btn" href="https://t.me/XploitNow_Bot" target="_blank">
-            Access the bot
-          </a>
-        </div>
+
+    <!-- Projects part -->
+    <section id="work" class="section wrap">
+      <h2>Projects</h2>
+      <p class="muted">Exploring the space between building and breaking — each project reflects a balance of software engineering and cybersecurity insight.</p>
+  
+      <div class="grid" id="projects">
+        <article class="card">
+          <div class="card-header">
+            <h3>Red Inject</h3>
+            <a href="https://github.com/aashifm1/Red-Inject" class="view-btn">View</a>
+          </div>
+          <div class="card-content">
+            <img src="images/vuln-scan.png" alt="Red Inject" class="card-img" />
+            <div class="card-details">
+              <p>
+                A tool that automates the scanning of webpages to detect and analyze HTML forms, identifying potential XSS and SQL injection vulnerabilities through intelligent crawling, input field enumeration, and pattern-based payload analysis — streamlining the process of web application security testing, reducing manual effort, and assisting developers or security analysts in uncovering common attack vectors across dynamic or static web pages.
+              </p>
+              <div class="sep"></div>
+              <div class="chip-container">
+                <span class="chip">Python</span>
+                <span class="chip">Shell</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-header">
+            <h3>Intrusion Detection & Detection System with n8n</h3>
+            <a href="https://github.com/aashifm1/IDPS-n8n" class="view-btn">View</a>
+          </div>
+          <div class="card-content">
+            <img src="images/idps-thumb.png" alt="IDPS image" class="card-img" />
+            <div class="card-details">
+              <p>
+                An automated intrusion detection and prevention system that continuously monitors network traffic by checking IP addresses against threat databases, sends real-time alerts via Telegram for suspicious activity, and logs detailed threat information directly into Google Sheets for easy tracking, analysis, and incident management.
+              </p>
+              <div class="sep"></div>
+              <div class="chip-container">
+                <span class="chip">n8n</span>
+                <span class="chip">AbuseIPDB</span>
+                <span class="chip">Telegram API</span>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="card">
+          <div class="card-header">
+            <h3>Keysrokes Logger</h3>
+            <a href="https://github.com/aashifm1/Keylogger" class="view-btn">View</a>
+          </div>
+          <div class="card-content">
+            <img src="images/keylogger.png" alt="Keylogger" class="card-img" />
+            <div class="card-details">
+              <p>
+                A lightweight Python-based script that captures and records keyboard inputs in real time, enabling detailed activity tracking and keystroke logging for user behavior analysis, security auditing, monitoring suspicious actions, forensic investigations, or parental control — all while running discreetly in the background with minimal resource usage.              </p>
+              <div class="sep"></div>
+              <div class="chip-container">
+                <span class="chip">Python</span>
+                <span class="chip">Shell</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-header">
+            <h3>Voice Assistant</h3>
+            <a href="https://github.com/aashifm1/Voice-Assistant" class="view-btn">View</a>
+          </div>
+          <div class = "card-content">
+            <img src = "images/voicex.png" alt = "Voice Assistant" class = "card-img" />
+            <div class="card-details">
+              <p>
+                A personal voice assistant that listens to spoken commands, responds using text-to-speech, and automates a variety of everyday tasks such as web searches, opening applications, checking the time, fetching weather updates, managing simple reminders, sending predefined messages, performing calculations, and more — all designed to offer a hands-free, seamless user experience through natural language interaction.
+              </p>
+              <div class="sep"></div>
+              <div class="chip-container">
+                <span class="chip">Python</span>
+              </div>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
-    -->
+
+
+    <section id="hackathon" class="section wrap">
+      <h2>Hackathons Participated</h2>
+      
+      <div class="hackathon-entry">
+        <h3>No Rag Hackathon</h3>
+
+        <div class="hackathon-meta">
+          <p><strong>Team Name:</strong> ZeroRag-AI</p>
+          <p><a href="https://zerorag-ai.netlify.app" class="view-btn" target="_blank">View Project</a></p>
+        </div>
+
+        <p><strong>Problem Statement:</strong>  
+          Despite strict regulations, ragging incidents in colleges often go unreported due to fear of retaliation, lack of anonymity, and slow response mechanisms. An AI-powered system is needed to ensure safe reporting, real-time detection, and swift action while protecting student privacy across all departments.
+        </p>
+
+        <p><strong>Team Members:</strong> Aashif M, Mohamed Safin</p>
+      </div>
+    </section>
+    
+
+    
     <!-- Contact part -->
     <section id="contact" class="section wrap">
       <h2>Contact Me</h2>
