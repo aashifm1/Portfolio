@@ -11,8 +11,11 @@ View Website - [Click Here](https://aashifm.netlify.app)
 - Added a "Bottom to Top" Button with smooth scrolling.
 - Modified the robots.txt.
 - Nav bar fully fixed
+- Nav bar links altered and in smaller screens it changes into dropdown
+- Added and enhanced Hackathon part
+- Update "Project" section from existing to detailed manner.
+- Added CTF part
 
 ### Upcoming Improvements
 - Medium blogs sections with scroll to right and left
-- Update the "Skills" section
-- Update "Project" section from existing to detailed manner.
+- Skills part's text will be replaced by its respective images 
