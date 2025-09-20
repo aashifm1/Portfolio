@@ -1,3 +1,15 @@
+
+// Close mobile menu on link click
+document.querySelectorAll('.links .link').forEach(link => {
+  link.addEventListener('click', () => {
+    const navLinks = document.querySelector('.links');
+    if (navLinks.classList.contains('show')) {
+      navLinks.classList.remove('show');
+    }
+  });
+});
+
+
 // Simple and reliable scroll to top function
 function forceScrollToTop() {
   console.log('🔧 Force scroll initiated...');
@@ -122,6 +134,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 })();
 
-
-
-
+function toggleMenu() {
+    document.querySelector(".links").classList.toggle("show");
+  }
