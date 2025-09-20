@@ -14,17 +14,24 @@
   <header>
     <div class="wrap nav">
       <div class="brand">Aashif M</div>
+
+      <!-- Hamburger button (mobile only) -->
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+
       <nav class="links">
         <a class="link" href="#home">Home</a>
         <a class="link" href="#skills">Skills</a>
-        <a class="link" href="#work">Projects</a>
+        <a class="link" href="#projects">Projects</a>
+        <a class="link" href="#hackathon">Hackathon</a>
+        <a class="link" href="#ctf">CTF</a>
         <a class="link" href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <section id="home" class="hero wrap">
+
+  <main id="home">
+    <section class="hero wrap">
       <div class="inner fade">
         <div class="profile">
           <div class="avatar">
@@ -65,7 +72,7 @@
 
 
     <!-- Projects part -->
-    <section id="work" class="section wrap">
+    <section id="projects" class="section wrap">
       <h2>Projects</h2>
       <p class="muted">Exploring the space between building and breaking — each project reflects a balance of software engineering and cybersecurity insight.</p>
   
@@ -152,25 +159,65 @@
     </section>
 
 
-    <section id="hackathon" class="section wrap">
-      <h2>Hackathons Participated</h2>
+    <<section id="hackathon" class="section wrap">
+      <h2>Hackathons</h2>
+      <p class="muted">Showcasing my participation in hackathons where I applied practical skills, teamwork, and innovation to solve real-world problems.</p>
       
       <div class="hackathon-entry">
-        <h3>No Rag Hackathon</h3>
+        <div class="hackathon-header">
+          <h3>Smart India Hackathon</h3>
+          <span class="hackathon-date">19/09/2025</span>
+        </div>
+        <div class="hackathon-meta">
+          <p><strong>Team Name:</strong> EcoYield</p>
+          <!-- <p><a href="#" class="view-btn" target="_blank">View Project</a></p> -->
+        </div>
+        <p><strong>Problem Statement:</strong>  
+          Farmers often overuse fertilizers, leading to higher input costs, soil degradation, and environmental harm, while still struggling to achieve optimal crop yields. A solution is needed to provide precise fertilizer recommendations that maximize yield and minimize waste.
+        </p>
+        <p><strong>Team Members:</strong> Aashif M, Ahamed H, Muzzammil, Harshavardhan, Nawf Abdullah, Krithika</p>
+      </div>
 
+      <div class="hackathon-entry">
+        <div class="hackathon-header">
+          <h3>No Rag Hackathon</h3>
+          <span class="hackathon-date">22/08/2025</span>
+        </div>
         <div class="hackathon-meta">
           <p><strong>Team Name:</strong> ZeroRag-AI</p>
           <p><a href="https://zerorag-ai.netlify.app" class="view-btn" target="_blank">View Project</a></p>
         </div>
-
         <p><strong>Problem Statement:</strong>  
           Despite strict regulations, ragging incidents in colleges often go unreported due to fear of retaliation, lack of anonymity, and slow response mechanisms. An AI-powered system is needed to ensure safe reporting, real-time detection, and swift action while protecting student privacy across all departments.
         </p>
-
         <p><strong>Team Members:</strong> Aashif M, Mohamed Safin</p>
       </div>
+
+
     </section>
-    
+
+
+    <!-- CTF section -->
+    <section id="ctf" class="section wrap">
+      <h2>CTF Challenges</h2>
+      <p class="muted">Tracking my progress across Capture The Flag challenges with difficulty levels.</p>
+
+      <div class="ctf-stats">
+        <div class="ctf-card">
+          <h3>Easy</h3>
+          <p class="count">21 Solved</p>
+        </div>
+        <div class="ctf-card">
+          <h3>Medium</h3>
+          <p class="count">19 Solved</p>
+        </div>
+        <div class="ctf-card">
+          <h3>Hard</h3>
+          <p class="count">2 Solved</p>
+        </div>
+      </div>
+    </section>
+
 
     
     <!-- Contact part -->
@@ -204,9 +251,6 @@
       </div>
     </section>
   </main>
-
-
-
 
   <!-- Footer part -->
   <footer class="wrap">
