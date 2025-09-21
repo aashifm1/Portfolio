@@ -8,7 +8,7 @@
   <meta property="og:title" content="Aashif M · Portfolio" />
   <meta property="og:description" content="Projects, skills, and contact." />
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="icons/favicon.ico" type="image/x-icon">
 </head>
 <body>
   <header>
@@ -35,7 +35,7 @@
       <div class="inner fade">
         <div class="profile">
           <div class="avatar">
-            <img src="images/dp.png" alt="Profile photo" loading="lazy" />
+            <img src="images/dp.jpg" alt="Profile photo" loading="lazy" />
           </div>
           <div>
             <div class="name">Aashif M</div>
@@ -44,7 +44,7 @@
         </div>
 
         <p class="tag">Hey there <span id="ip" aria-label="Local IP"></span></p>
-        <p class="subtitle">Focued on project development, bug bounty hunting and AI-driven automation. Experienced in building practical projects like web apps, security tools, conducting advanced recons.</p>
+        <p class="subtitle">Focused on project development, bug bounty hunting and AI-driven automation. Experienced in building practical projects like web apps, security tools, conducting advanced recons.</p>
         <div class="cta">
           <a class="btn primary" href="assets/resume.pdf" target="_blank" rel="noopener">View Resume</a>
           <a class="btn" href="#contact">Contact</a>
@@ -53,27 +53,47 @@
       </div>
     </section>
     
-    <!-- Skills part -->
-    <section id="skills" class="section wrap">
-      <h2>Skills</h2>
-      <div class="skills">
-        <div class="skill">C/C++</div>
-        <div class="skill">Python</div>
-        <div class="skill">Go</div>
-        <div class="skill">HTML/CSS/JS</div>
-        <div class="skill">MySQL</div>
-        <div class="skill">Bug Bounty</div>
-        <div class="skill">n8n</div>
-        <div class="skill">GitHub</div>
-        <div class="skill">Postman</div>
-        <div class="skill">Docker</div>
+    <!-- Skills / Tools & Stacks Section -->
+    <section id="skills" class="tools-section">
+      <h2 class="tools-heading">Skills</h2>
+      <p class="muted">
+        Bridging logic and creativity — a toolkit shaped by hands-on experience in coding, securing, and problem-solving across diverse domains.
+      </p>
+      <div class="tools-grid">
+        <!-- Programming Languages -->
+        <div class="tool-card"><img src="icons/python.png" alt="Python"></div>
+        <div class="tool-card"><img src="icons/go.png" alt="Go"></div>
+        <div class="tool-card"><img src="icons/bash.png" alt="Bash"></div>
+
+        <!-- Web Technologies -->
+        <div class="tool-card"><img src="icons/html.png" alt="HTML5"></div>
+        <div class="tool-card"><img src="icons/css.svg" alt="CSS3"></div>
+        <div class="tool-card"><img src="icons/js.png" alt="JavaScript"></div>
+
+        <!-- Database -->
+        <div class="tool-card"><img src="icons/mysql.png" alt="MySQL"></div>
+
+        <!-- Version Control / DevOps -->
+        <div class="tool-card"><img src="icons/git.png" alt="Git"></div>
+        <div class="tool-card"><img src="icons/github.png" alt="GitHub"></div>
+
+        <!-- OS -->
+        <div class="tool-card"><img src="icons/linux.png" alt="Linux"></div>
+
+        <!-- Cybersecurity Tools -->
+        <div class="tool-card"><img src="icons/burpsuite.png" alt="Burp Suite"></div>
+        <div class="tool-card"><img src="icons/wireshark.png" alt="Wireshark"></div>
+        <div class="tool-card"><img src="icons/nmap.png" alt="Nmap"></div>
+
+        <!-- Automation / Workflow -->
+        <div class="tool-card"><img src="icons/n8n.png" alt="n8n"></div>
       </div>
     </section>
 
 
     <!-- Projects part -->
     <section id="projects" class="section wrap">
-      <h2>Projects</h2>
+      <h2 class="section-heading">Projects</h2>
       <p class="muted">Exploring the space between building and breaking — each project reflects a balance of software engineering and cybersecurity insight.</p>
   
       <div class="grid" id="projects">
@@ -160,9 +180,8 @@
 
 
     <section id="hackathon" class="section wrap">
-      <h2>Hackathons</h2>
+      <h2 class="section-heading">Hackathons</h2>
       <p class="muted">Showcasing my participation in hackathons where I applied practical skills, teamwork, and innovation to solve real-world problems.</p>
-      
       <div class="hackathon-entry">
         <div class="hackathon-header">
           <h3>Smart India Hackathon</h3>
@@ -192,14 +211,12 @@
         </p>
         <p><strong>Team Members:</strong> Aashif M, Mohamed Safin</p>
       </div>
-
-
     </section>
 
 
     <!-- CTF section -->
     <section id="ctf" class="section wrap">
-      <h2>CTF Challenges</h2>
+    <h2 class="section-heading">CTF Challenges</h2>
       <p class="muted">Tracking my progress across Capture The Flag challenges with difficulty levels.</p>
 
       <div class="ctf-stats">
@@ -218,23 +235,29 @@
       </div>
     </section>
 
-
     
-    <!-- Contact part -->
     <section id="contact" class="section wrap">
-      <h2>Contact Me</h2>
-      <p class="muted">Feel free to reach out.</p>
-      <div class="contact">
+      <h2 class="section-heading">Contact Me</h2>
+      <p class="muted">Feel free to reach me out.</p>
+
+      <div class="contact-links">
         <a href="mailto:aashif8056@gmail.com">
-          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 6h16v12H4z" stroke="currentColor"/><path d="m4 6 8 6 8-6" stroke="currentColor"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M4 6h16v12H4z" stroke="currentColor"/>
+            <path d="m4 6 8 6 8-6" stroke="currentColor"/>
+          </svg>
           Email Me
         </a>
         <a href="https://www.linkedin.com/in/aashifm" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9h3v9H6zM7.5 6.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM11 9h3v1.7h.04A3.3 3.3 0 0 1 17 9c2 0 3 1.2 3 3.6V18h-3v-4.1c0-1.1-.4-1.9-1.4-1.9-1 0-1.6.7-1.6 1.9V18h-3z" stroke="currentColor"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M6 9h3v9H6zM7.5 6.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM11 9h3v1.7h.04A3.3 3.3 0 0 1 17 9c2 0 3 1.2 3 3.6V18h-3v-4.1c0-1.1-.4-1.9-1.4-1.9-1 0-1.6.7-1.6 1.9V18h-3z" stroke="currentColor"/>
+          </svg>
           LinkedIn
         </a>
         <a href="https://github.com/aashifm1" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 .8a11.2 11.2 0 0 0-3.5 21.8c.5.1.7-.2.7-.5v-1.7c-3 .7-3.6-1.5-3.6-1.5-.5-1.2-1.1-1.6-1.1-1.6-.9-.6.1-.6.1-.6 1 .1 1.6 1 1.6 1 .9 1.6 2.5 1.1 3.1.8.1-.7.3-1.1.6-1.4-2.4-.3-5-1.2-5-5.5 0-1.2.4-2.3 1.1-3.2-.1-.3-.5-1.6.1-3.3 0 0 .9-.3 3.3 1.2a11.6 11.6 0 0 1 6 0c2.4-1.5 3.3-1.2 3.3-1.2.6 1.7.2 3 .1 3.3.7.9 1.1 2 1.1 3.2 0 4.3-2.6 5.2-5 5.5.3.3.6.8.6 1.6v2.3c0 .3.2.6.7.5A11.2 11.2 0 0 0 12 .8z" stroke="currentColor"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 .8a11.2 11.2 0 0 0-3.5 21.8c.5.1.7-.2.7-.5v-1.7c-3 .7-3.6-1.5-3.6-1.5-.5-1.2-1.1-1.6-1.1-1.6-.9-.6.1-.6.1-.6 1 .1 1.6 1 1.6 1 .9 1.6 2.5 1.1 3.1.8.1-.7.3-1.1.6-1.4-2.4-.3-5-1.2-5-5.5 0-1.2.4-2.3 1.1-3.2-.1-.3-.5-1.6.1-3.3 0 0 .9-.3 3.3 1.2a11.6 11.6 0 0 1 6 0c2.4-1.5 3.3-1.2 3.3-1.2.6 1.7.2 3 .1 3.3.7.9 1.1 2 1.1 3.2 0 4.3-2.6 5.2-5 5.5.3.3.6.8.6 1.6v2.3c0 .3.2.6.7.5A11.2 11.2 0 0 0 12 .8z" stroke="currentColor"/>
+          </svg>
           GitHub
         </a>
         <a href="https://medium.com/@aashifm" target="_blank" rel="noopener">
@@ -247,9 +270,9 @@
           </svg>
           Medium
         </a>
-
       </div>
     </section>
+
   </main>
 
   <!-- Footer part -->
