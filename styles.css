@@ -200,16 +200,102 @@ header {
 }
 
 /* Sections */
-.section{padding:64px 0; border-top:1px solid var(--line);
-  position: relative; /* nav bar correction */}
-.section h2{font-size:24px; letter-spacing:-.01em; margin:0 0 8px}
-.muted{color:var(--muted)}
+/* Unified section heading alignment */
+.section-heading {
+  font-size: 48px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 40px;
+  line-height: 1.2;
+  text-align: center;    /* ensure centered */
+  width: 100%;            /* full width so alignment works consistently */
+}
+
+/* Ensure section containers don't shift headings */
+.section.wrap {
+  text-align: left;
+}
+.section {
+  text-align: center;     /* so that default children (like the heading) are centered */
+  padding:64px 0; border-top:1px solid var(--line);
+  position: relative;
+}
+
+.section p {
+  text-align: center;
+}
+#contact, #contact h2 {
+  text-align: center;
+}
+
+/* Remove or override any left-align styles you had for specific sections */
+#hackathon h2,
+#ctf h2 {
+  text-align: center;     /* override if they were left aligned before */
+}
 
 @media (max-width: 991px) {
   section {
     scroll-margin-top: 80px; /* adjust if needed */
   }
 }
+
+
+/* Section Background & Heading */
+.tools-section {
+  background-color: #0c0c0d;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.tools-heading {
+  font-size: 48px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 40px;
+  line-height: 1.2;
+}
+
+.tools-heading span {
+  color: white;
+}
+
+.tools-heading .stacks {
+  color: #2e2e2e;
+}
+
+/* Grid Layout */
+.tools-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;      /* Center the entire grid */
+  gap: 20px;                    /* Space between items */
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+
+/* Tool Card */
+.tool-card {
+  background-color: #111113;
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid #2c2c2e;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tool-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Tool Icon */
+.tool-card img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
 
 
 /* Projects Container */
@@ -287,6 +373,7 @@ header {
   font-size: 0.95rem;
   line-height: 1.5;
   word-break: break-word;
+  text-align: left;
 }
 
 /* Separator line */
@@ -325,42 +412,9 @@ header {
   
 }
 
-/* Skills */
-.skills {
-  display:flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.skill {
-  font-size: 18px;
-  padding: 8px 14px;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  background: #111113;
-  color: var(--muted);
-  transition: all 0.2s ease;
-}
-
-.skill{
-  padding:18px; border:1px solid var(--line); border-radius:var(--radius); background:linear-gradient(180deg,#141417,#101014)
-}
-
 /* Hackathon Section Enhanced */
 #hackathon {
   margin-top: 4rem;
-}
-
-#hackathon h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #fff;
-}
-
-#hackathon p.muted {
-  margin-bottom: 2rem;
-  color: var(--muted);
-  max-width: 700px;
 }
 
 .hackathon-entry {
@@ -412,6 +466,10 @@ header {
   font-size: 0.95rem;
 }
 
+#hackathon p {
+  text-align: left;
+}
+
 .view-btn {
   color: #00ffc3;
   text-decoration: underline;
@@ -439,12 +497,6 @@ header {
 
 
 /* CTF Section */
-#ctf h2 {
-  font-size: 2rem;
-  margin-bottom: 1.2rem;
-  color: #fff;
-}
-
 .ctf-stats {
   display: flex;
   gap: 20px;
@@ -482,10 +534,36 @@ header {
 
 
 /* Contact (minimal, no cards) */
-.contact{display:grid; gap:10px; max-width:680px}
-.contact a{display:flex; align-items:center; gap:10px; padding:12px 14px; border:1px solid var(--line); border-radius:12px; background:linear-gradient(180deg,#141417,#101014)}
-.contact svg{width:18px; height:18px}
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;       /* Centers the links horizontally */
+  gap: 16px;                 /* Spacing between links */
+  margin-top: 30px;
+}
 
+.contact-links a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  background: #111;
+  color: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  width: 280px;              /* You can adjust */
+  justify-content: center;   /* Center icon + text inside */
+  transition: background 0.3s ease;
+}
+
+.contact-links a:hover {
+  background: #222;
+}
+
+.contact-links svg {
+  width: 20px;
+  height: 20px;
+}
 footer{padding:24px 0; color:var(--muted); text-align: center;}
 .sep{height:1px; background:var(--line); margin:24px 0}
 /* Scroll to Top Button - Enhanced */
